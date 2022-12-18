@@ -1,0 +1,26 @@
+package Tests;
+
+public class rough {
+
+	public static void main(String[] args) {
+int n=1;
+		int[]arr= new int [n];
+int d=3;
+arr= new int[d];
+arr[2]=3;
+arr[2]=4;
+System.out.println(arr[2]);
+
+String str= new String ("abc");
+str= new String(str.substring(0, 2));
+System.out.println(str);
+StringBuffer str1=new StringBuffer("qwerty");
+str+="wer";
+str1.setCharAt(0, 'a');
+str1.append("uiop");
+System.out.println(str);
+System.out.println(str1);
+
+	}
+
+}

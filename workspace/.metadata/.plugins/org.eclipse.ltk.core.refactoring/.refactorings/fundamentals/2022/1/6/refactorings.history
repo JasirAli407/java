@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;recursion_2.ReplaceAwithB_InString.java&apos; to &apos;ReplaceChar_InString.java&apos;&#x0D;&#x0A;- Original project: &apos;fundamentals&apos;&#x0D;&#x0A;- Original element: &apos;recursion_2.ReplaceAwithB_InString.java&apos;&#x0D;&#x0A;- Renamed element: &apos;recursion_2.ReplaceChar_InString.java&apos;" description="Rename compilation unit &apos;ReplaceAwithB_InString.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;recursion_2{ReplaceAwithB_InString.java" name="ReplaceChar_InString.java" references="false" stamp="1643542701195" version="1.0"/>
+</session>

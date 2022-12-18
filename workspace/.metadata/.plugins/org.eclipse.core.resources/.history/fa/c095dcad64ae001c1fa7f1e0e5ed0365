@@ -1,0 +1,10 @@
+package binarytrees_1;
+
+public class BalancedTreeBetter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

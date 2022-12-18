@@ -1,0 +1,48 @@
+package classesandobjects;
+
+public class Fraction {
+	private int numerator;
+	private int denominator;
+
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+		simplify();
+	}
+
+	public void setNumerator(int numerator) {
+		this.numerator = numerator;
+	}
+
+	public void getNumerator() {
+		System.out.println(numerator);
+	}
+
+	public void print() {
+		System.out.println(numerator + "/" + denominator);
+	}
+
+	private void simplify() {
+		int gcd = 1;
+		int min = Math.min(numerator, denominator);
+		for (int i = 2; i < min; ++i) {
+			if (numerator % i == 0 && denominator % i == 0) {
+				gcd = i;
+			}
+			this.numerator = this.numerator / gcd;
+			this.denominator = this.denominator / gcd;
+		}
+	}
+
+	public void increment() { /* eg:3/4; 3/4+1=3+4/4 */
+		numerator = numerator + denominator;
+		simplify();
+	}
+
+	public void add2Fraction(int num1, int den1, int num2, int den2) {
+		numerator = num1 * den2 + num2 * den1;
+		denominator = den1 * den2;
+
+	}
+
+}

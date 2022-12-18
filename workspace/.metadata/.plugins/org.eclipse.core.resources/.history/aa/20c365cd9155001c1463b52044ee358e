@@ -1,0 +1,33 @@
+package fundamentals;
+
+public class TypeCasting {
+
+	public static void main(String[] args) {
+
+		// REMEMBER RHS will be evaluated first
+	
+		
+//System.out.println(5/2);  // both r int so result int
+
+		//	System.out.println((double)5/2);	 // explicit casting to get decimal
+
+		//		System.out.println(2.0/5); //this is another way to get decimal value. 
+		/* here(2.0) the biggest is double(by default) so result will be in double */
+		
+		
+
+//float a;
+//int b;
+//a =1.5f; b=1;
+//int c =(int)a+b; // explicit casting 
+//System.out.println(c);
+		
+		
+		//	char ch = 'a';
+//	int i = ch;   // implicit conversion from small to big possible(auto)
+//	ch = (char)i;  //explicit conversion bcos big to small not possible implicitly
+//		 System.out.println(ch);   //in explicit typecasting there is a chance for data loss
+		
+	}
+
+}

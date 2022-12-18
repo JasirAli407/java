@@ -1,0 +1,30 @@
+package linkedlist;
+
+public class LL_notes {
+	// in LL keeping variables head, tail makes the code optimum
+	//	 make before break rule = means make it before breaking the link of the next node
+
+
+
+
+
+	public static void main(String[] args) {
+		Node<Integer> n1 = new Node<Integer>(1);
+		Node<Integer> n2 = new Node<Integer>(2);
+		Node<Integer> n3 = new Node<Integer>(3);
+		Node<Integer> n4 = new Node<Integer>(4);
+		Node<Integer> n5 = new Node<Integer>(5);
+		
+		n1.next = n2;
+		n2.next = n3;
+		n3.next = n4;
+		
+		n1.next = n1.next.next;
+		
+		System.out.println(n1.data);
+	}
+	
+}
+
+
+

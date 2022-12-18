@@ -1,0 +1,36 @@
+package binarytrees_1;
+
+public class BalancedTreeBetter {
+	public static BalancedTreeReturn balancedTreeBetter(BinaryTreeNode<Integer> root) {
+
+		if (root == null) {
+			BalancedTreeReturn ans = new BalancedTreeReturn();
+			ans.height = 0;
+			ans.isBalanced = true;
+			return ans;
+		}
+
+		BalancedTreeReturn leftOutput = balancedTreeBetter(root.left);
+		BalancedTreeReturn rightoutput = balancedTreeBetter(root.right);
+		int height = 1 + Math.max(leftOutput.height, rightoutput.height);
+		boolean isBal = true;
+		if (Math.abs(leftOutput.height - rightoutput.height) > 1) {
+			isBal = false;
+		}
+
+		if (!leftOutput.isBalanced || !rightoutput.isBalanced) {
+			isBal = false;
+		}
+
+		BalancedTreeReturn ans = new BalancedTreeReturn();
+		ans.height = height;
+		ans.isBalanced = isBal;
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

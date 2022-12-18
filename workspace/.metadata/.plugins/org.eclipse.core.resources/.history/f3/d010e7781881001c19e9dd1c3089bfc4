@@ -1,0 +1,24 @@
+package recursion_1;
+
+public class FirstIndexOfANumber {
+public static int firstIndexBetter(int a[],int x,int startIndex) {
+	if(a.length==0) {
+		return -1;
+	}
+	if(a[startIndex]==x) {
+		return startIndex;
+	}
+	return firstIndexBetter( a,x, startIndex+1);
+	
+}
+public static int firstIndex(int input[], int x) {
+	return firstIndexBetter( input,x, 0)	;
+	
+}
+	public static void main(String[] args) {
+int arr[]= {1,2,3,4,5};
+System.out.println(firstIndex(arr, 3));
+
+	}
+
+}

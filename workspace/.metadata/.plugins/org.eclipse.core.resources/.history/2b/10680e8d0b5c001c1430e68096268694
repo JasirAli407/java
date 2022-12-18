@@ -1,0 +1,26 @@
+package ForLoop;
+
+import java.util.Scanner;
+
+public class Rough {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int quotient = n;
+		int s;
+		while(quotient>0) {
+			int remainder = quotient%2;
+			 s = remainder;
+		
+			quotient= quotient/2;
+		}
+	System.out.print(s);}
+
+
+
+
+
+}
+
+
